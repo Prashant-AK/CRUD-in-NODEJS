@@ -1,0 +1,33 @@
+
+<div style="color:black; bg-color:rgba(5, 2, 56, 0.966);">
+
+<header class="container well-lg " style="background-color:darkblue;color:white;"><center><h1>Add Student</h1></center></header>
+        <div class="container" style="padding:5px">
+        
+        <form action="/user/register" method="POST">
+        <input type="hidden" name="_id" value="{{docs._id}}">
+            <div class="form-group">
+              <label for="Name">Name:</label>
+              <input type="Name" class="form-control" name="Name" placeholder="Enter the Student Name" value="{{docs.Name}}">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter Email" value="{{docs.Email}}">
+              </div>
+              <div class="form-group">
+                <label for="fathername">Father Name:</label>
+                <input type="fathername" class="form-control" name="fname" placeholder="Enter the Father Name" value="{{docs.Father_name}}">
+              </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" name="pwd" placeholder="Enter the Password" value="{{docs.Password}}">
+              </div>
+              <div class="form-group">
+                <label for="phno">Phone:</label>
+                <input type="phno" class="form-control" name="phno" placeholder="Enter the Phone Number" value="{{docs.Phone}}">
+              </div>
+              <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+        </form>
+
+        </div>

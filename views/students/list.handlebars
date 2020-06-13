@@ -1,0 +1,25 @@
+
+<table class="table table-striped">
+    <tr>
+
+        <th>Name</th>
+        <th>Email</th>
+        <th>Father Name</th>
+        <th>Password</th>
+        <th>Phone</th>
+        {{!-- <th>Edit</th>
+        <th>Delete</th> --}}
+    </tr>
+    <tbody>
+        {{#each list}}
+        <tr>
+        <td>{{this.Name}}</td>
+        <td>{{this.Email}}</td>
+        <td>{{this.Father_name}}</td>
+        <td>{{this.Password}}</td>
+        <td>{{this.Phone}}</td>
+        
+        {{/each}}
+        </tr>  
+    </tbody>  
+</table>
